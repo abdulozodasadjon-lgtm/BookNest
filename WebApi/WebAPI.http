@@ -1,0 +1,24 @@
+@WebAPI_HostAddress = http://localhost:5169
+
+GET {{WebAPI_HostAddress}}/api/books
+Accept: application/json
+
+###
+
+GET {{WebAPI_HostAddress}}/api/books/1
+Accept: application/json
+
+###
+
+POST {{WebAPI_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "publishedYear": 2008,
+  "totalCopies": 3,
+  "authorId": 1,
+  "genreId": 1
+}
+
+###
